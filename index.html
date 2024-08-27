@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="it">
+    <meta charset="UTF-8" />
+    <title>Progetto countdown</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+    
+    <article id="countdown">
+        <h1>Conto alla rovescia</h1>
+
+        <section id="time">
+            <div>
+                <span id="giorni">0</span>
+                giorni
+            </div>
+            <div>
+                <span id="ore">0</span>
+                ore
+            </div>
+            <div>
+                <span id="minuti">0</span>
+                minuti
+            </div>
+            <div>
+                <span id="secondi">0</span>
+                secondi
+            </div>
+        </section>
+     <section id="loader-wrapper">
+        <div id="loader">
+
+        </div>
+    </section>
+    </article>
+   
+
+    <script type="module">
+        import Countdown from './countdown.js';
+        new Countdown(8, 2, 2024, 10, 34, 15);
+    </script>
+</body>
+</html>
